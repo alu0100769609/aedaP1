@@ -8,9 +8,9 @@ public:
    LinkedList(void);                //Constructor
    ~LinkedList(void);               //Destructor
    bool empty(void);                //Check if empty list
-   void setFirst(Node* first);      //Set pointer to the last node
+   void setFirst(Node* first);      //Set pointer to the first node
    Node* getFirst(void);            //Get pointer to the first element
-   void setLast(Node* last);        //Set pointer to the first node
+   void setLast(Node* last);        //Set pointer to the last node
    Node* getLast(void);             //Get pointer to the last element
    void setHead(TDATO element);     //Set element from head
    void setTail(TDATO element);     //Set element from tail

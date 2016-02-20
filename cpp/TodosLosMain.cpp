@@ -33,7 +33,7 @@ do {
          system("./mainList.out");
          break;
       case 3:
-//         MainStack();
+         system("./mainStack.out");
          break;
       case 4:
 //         MainQueue();
