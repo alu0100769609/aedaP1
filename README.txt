@@ -1,11 +1,14 @@
-COMPILAR MAIN:
+COMPILE MAIN:
 g++ cpp/TodosLosMain.cpp -o main.out
 
-COMPILAR VECTOR:
+COMPILE VECTOR:
 g++ cpp/MainVector.cpp cpp/Vector.cpp -o mainVector.out
 
-COMPILAR LINKEDLIST:
+COMPILE LINKEDLIST:
 g++ cpp/MainList.cpp cpp/Node.cpp cpp/LinkedList.cpp -o mainList.out
 
-COMPILAR STACK:
+COMPILE STACK:
 g++ cpp/MainStack.cpp cpp/Node.cpp cpp/Stack.cpp -o mainStack.out
+
+COMPILE QUEUE:
+g++ cpp/MainQueue.cpp cpp/Node.cpp cpp/Queue.cpp -o mainQueue.out

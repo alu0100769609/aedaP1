@@ -36,7 +36,7 @@ do {
          system("./mainStack.out");
          break;
       case 4:
-//         MainQueue();
+      system("./mainQueue.out");
          break;
       default:
          break;
