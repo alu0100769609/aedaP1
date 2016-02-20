@@ -1,3 +1,5 @@
+PARA COMPILAR HAY QUE SITUARSE EN EL DIRECTORIO PRINCIPAL, FUERA DE cpp/ hpp/ y practica/
+
 COMPILE MAIN:
 g++ cpp/TodosLosMain.cpp -o main.out
 

@@ -32,51 +32,20 @@ Node* Queue::getLast(void) {
 
 void Queue::setHead(TDATO element) {
    Node* aux = new Node(element);               //Creating Node with data
-   if (empty()) {                               //If list is empty
+   if (empty()) {                               //If queue is empty
       setFirst(aux);                            //First node = aux
       setLast(aux);                             //Last node = aux
    }
-   else {                                       //If list is not empty
+   else {                                       //If queue is not empty
       aux->setNext(getFirst());                 //Set next of aux to 1st element
       setFirst(aux);                            // and change 1st element to aux
    }
 }
-/*
-void Queue::setTail(TDATO element) {
-   Node* aux = new Node(element);               //Creating Node with data
-   if (empty()) {                               //If list is empty
-      setFirst(aux);                            //First node = aux
-      setLast(aux);                             //Last node = aux
-   }
-   else {                                       //If list is not empty
-      getLast()->setNext(aux);                  //Set next of last node = aux
-      setLast(aux);                             //Set last node = aux
-   }
-}
 
-void Queue::deleteFirst() {
-   if (empty())
-      std::cout << "Empty list, nothing deleted" << std::endl;
-   else {
-      if (getFirst() == getLast()) {            //If only one element
-         Node* aux = getFirst();                //Create aux pointer to first
-         setFirst(NULL);                        //Set first = null
-         setLast(NULL);                         //Set last = null
-         delete aux;                            //Delete node
-      }
-      else {                                    //If more than one element
-         Node* aux = getFirst();                //Create aux pointer to first
-         setFirst(aux->getNext());              //Set first = 2nd element
-         delete aux;                            //Delete node (old first)
-      }
-      std::cout << "Deleted" << std::endl;
-   }
-}
-*/
 void Queue::deleteLast() {
    if (empty())
       std::cout << "Empty queue, nothing deleted" << std::endl;
-   else {                                       //If list is not empty
+   else {                                       //If queue is not empty
       Node* iterator = getFirst();              //Create pointer to iterate
       do {
          if (getFirst() == getLast()) {         //If only one element
@@ -94,7 +63,7 @@ void Queue::deleteLast() {
          }
          else
             iterator = iterator->getNext();     //Iterate to next node
-      }while (iterator->getNext() != NULL);     //Iterate while no end of list
+      }while (iterator->getNext() != NULL);     //Iterate while no end of queue
    }
 }
 
@@ -104,9 +73,9 @@ void Queue::printItems() {
    else {
       Node* aux = getFirst();                   //Create aux pointer to first
       do{
-         std::cout << aux->getElement() << " "; //Print item of list
+         std::cout << aux->getElement() << " "; //Print item of queue
          aux = aux->getNext();                  //Iterate to the next
-      } while (aux != NULL);                    //While no end of list
+      } while (aux != NULL);                    //While no end of queue
       std::cout << "\n";
    }
 }

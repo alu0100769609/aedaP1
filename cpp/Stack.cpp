@@ -23,10 +23,10 @@ Node* Stack::getFirst(void) {
 
 void Stack::setHead(TDATO element) {
    Node* aux = new Node(element);               //Creating Node with data
-   if (empty()) {                               //If list is empty
+   if (empty()) {                               //If stack is empty
       setFirst(aux);                            //First node = aux
    }
-   else {                                       //If list is not empty
+   else {                                       //If stack is not empty
       aux->setNext(getFirst());                 //Set next of aux to 1st element
       setFirst(aux);                            // and change 1st element to aux
    }
@@ -56,9 +56,9 @@ void Stack::printItems() {
    else {
       Node* aux = getFirst();                   //Create aux pointer to first
       do{
-         std::cout << aux->getElement() << " "; //Print item of list
+         std::cout << aux->getElement() << " "; //Print item of stack
          aux = aux->getNext();                  //Iterate to the next
-      } while (aux != NULL);                    //While no end of list
+      } while (aux != NULL);                    //While no end of stack
       std::cout << "\n";
    }
 }

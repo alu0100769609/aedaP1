@@ -9,12 +9,12 @@ int main(void) {
    int option;                      //Select option from menu
    TDATO item;                      //Type of items to set defined in Node.hpp
 
-   Queue* myQueue = new Queue();    //Creating our linked list
+   Queue* myQueue = new Queue();    //Creating our queue
    system("clear");                 //Clean screen
 
    do {
-      cout << "...Queue Menu...\n" //Print menu with different options
-           << "======================\n" << endl;
+      cout << "...Queue Menu...\n"  //Print menu with different options
+           << "================\n" << endl;
 
       cout << "Please choose an option:\n\n"
            << "0.- Exit\n"
@@ -32,7 +32,7 @@ int main(void) {
             break;
          case 1:
             cout << "Items: ";
-            myQueue->printItems();    //Print the list of items
+            myQueue->printItems();  //Print the queue items
             cout << endl;
             break;
          case 2:                    //Insert head
@@ -51,6 +51,6 @@ int main(void) {
         default:
             break;
      }
-  } while (true);                  //The end comes with return when case = 0
+  } while (true);                   //The end comes with return when case = 0
 
 }

@@ -1,13 +1,13 @@
 #include "../hpp/Vector.hpp"
 
-Vector::Vector(int maxSize) {
-   maxSize_ = maxSize;                    //Establish maximum vector's size
+Vector::Vector() {
+   maxSize_ = MAX_SIZE;                   //Establish maximum vector's size
    vector_ = new TDATO[maxSize_];         //Create new vector with maximum size
    setSize(ZERO);                         //Set current size of vector to zero
 }
 
 Vector::~Vector() {
-   delete vector_;                      //Delete vector
+   delete vector_;                        //Delete vector
 }
 
 void Vector::setSize(int size) {
@@ -19,7 +19,7 @@ int Vector::getSize(void) {
 }
 
 bool Vector::setItem(TDATO item) {
-   if (size_ < maxSize_ -1) {             //Check if the vector is not full
+   if (size_ < maxSize_) {                //Check if the vector is not full
       vector_[size_] = item;              //Save the new item into vector
       size_ ++;                           //Increase the current size
       return 0;

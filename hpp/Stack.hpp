@@ -11,5 +11,5 @@ public:
    Node* getFirst(void);            //Get pointer to the first element
    void setHead(TDATO element);     //Set element from head
    void deleteFirst(void);          //Delete node from head
-   void printItems(void);           //Print the list of elements
+   void printItems(void);           //Print the stack of elements
 };

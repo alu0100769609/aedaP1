@@ -9,16 +9,16 @@ int main(void) {
    int option;                      //Select option from menu
    TDATO item;                      //Type of items to set defined in Node.hpp
 
-   Stack* myStack = new Stack();               //Creating our linked list
+   Stack* myStack = new Stack();    //Creating our stack
    system("clear");                 //Clean screen
 
    do {
-      cout << "...Stack Menu...\n" //Print menu with different options
+      cout << "...Stack Menu...\n"  //Print menu with different options
            << "================\n" << endl;
 
       cout << "Please choose an option:\n\n"
            << "0.- Exit\n"
-           << "1.- Print list\n"
+           << "1.- Print stack\n"
            << "2.- Insert head item\n"
            << "3.- Delete first item\n" << endl;
 
@@ -32,7 +32,7 @@ int main(void) {
             break;
          case 1:
             cout << "Items: ";
-            myStack->printItems();    //Print the list of items
+            myStack->printItems();  //Print the stack items
             cout << endl;
             break;
          case 2:                    //Insert head
@@ -49,6 +49,6 @@ int main(void) {
         default:
             break;
      }
-  } while (true);                  //The end comes with return when case = 0
+  } while (true);                   //The end comes with return when case = 0
 
 }

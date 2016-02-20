@@ -7,6 +7,7 @@ using namespace std;
 
 int main(void) {
    int option;                      //Select option from menu
+   bool error = false;              //Check setItem's out
    TDATO item;                      //Type of items to set defined in Vector.hpp
 
    Vector myVector;                 //Creating our vector
@@ -36,14 +37,16 @@ int main(void) {
             cout << "What item do you want to set? ";
             cin >> item;
             system("clear");
-            myVector.setItem(item); //Set item
+            error = myVector.setItem(item); //Set item
+            if (error)
+               cout << "This vector is full, please delete first" << endl;
             break;
          case 2:                    //Get vector's size
             cout << "This vector has " << myVector.getSize()
                  << " elements" << endl;
           break;
         case 3:                     //Get the maximum lenght of the vector
-            cout << "This vector has " << myVector.getMaxSize()
+            cout << "This vector can reach " << myVector.getMaxSize()
                  << " elements" << endl;
           break;
         case 4:                     //Delete items from vector

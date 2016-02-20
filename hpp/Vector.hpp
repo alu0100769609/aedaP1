@@ -2,6 +2,7 @@
 
 typedef int TDATO;
 const int ZERO = 0;
+const int MAX_SIZE = 10;
 
 class Vector {
 private:
@@ -10,7 +11,7 @@ private:
    int* vector_;                             //Current Vector's position
 
 public:
-   Vector(int maxSize = 20);                 //Constructor with parameter by default, allow call without arguments
+   Vector();                                 //Constructor
    ~Vector();                                //Default destructor
 
    void setSize(int size);                   //Set vector's size
