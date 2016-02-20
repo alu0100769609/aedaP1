@@ -35,7 +35,7 @@ int main(void) {
          case 1:
             cout << "Items: ";
             myList->printItems();    //Print the list of items
-            cout << "\n" << endl;
+            cout << endl;
             break;
          case 2:                    //Insert head
             cout << "Write your item: ";
@@ -52,9 +52,11 @@ int main(void) {
           break;
         case 4:                     //Delete first item
             myList->deleteFirst();
+            cout << endl;
             break;
         case 5:                     //Delete last item
             myList->deleteLast();
+            cout << endl;
             break;
 
         default:
