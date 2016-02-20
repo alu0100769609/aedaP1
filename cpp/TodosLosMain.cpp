@@ -27,16 +27,16 @@ do {
          end = true;
          break;
       case 1:
-         system("./mainVector.out");
+         system("./out/mainVector.out");
          break;
       case 2:
-         system("./mainList.out");
+         system("./out/mainList.out");
          break;
       case 3:
-         system("./mainStack.out");
+         system("./out/mainStack.out");
          break;
       case 4:
-      system("./mainQueue.out");
+      system("./out/mainQueue.out");
          break;
       default:
          break;
