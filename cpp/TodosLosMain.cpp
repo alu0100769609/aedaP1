@@ -30,7 +30,7 @@ do {
          system("./mainVector.out");
          break;
       case 2:
-//         MainList();
+         system("./mainList.out");
          break;
       case 3:
 //         MainStack();
