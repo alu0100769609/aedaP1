@@ -19,6 +19,6 @@ public:
    int getSize(void);                        //Get vector's size
    bool setItem(TDATO item);                 //Set item into vector, return 1 if failed
    TDATO getItem(int position);              //Get item from vector position
-   void deleteItem(int numItems = 1);        //Remove item/s from vector, 1 by default
+   void deleteItem(int numItems);            //Remove item/s from vector
    void printItems(void);                    //Print items on the screen
 };
