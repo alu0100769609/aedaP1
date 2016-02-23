@@ -3,7 +3,8 @@ en el mismo directorio que este fichero README.txt
 
 A parte, se puede ejecutar cada clase por separado. Éstos ficheros .out se
 encuentran dentro de la carpeta /out. Para compilar de nuevo cualquier
-fichero .out (incluido el main) utilizar estos:
+fichero .out (incluido el main) y conservar la funcionalidad del programa,
+utilizar los siguientes:
 
 
 COMPILE MAIN:
