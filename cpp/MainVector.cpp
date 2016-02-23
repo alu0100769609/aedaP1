@@ -23,7 +23,8 @@ int main(void) {
            << "2.- Get vector's size\n"
            << "3.- Get maximum lenght of vector\n"
            << "4.- Delete items\n"
-           << "5.- Print items\n" << endl;
+           << "5.- Get item from vector\n"
+           << "6.- Print items\n" << endl;
 
       cin >> option;                //Get user option
       if (option != 1)              //Don't clean if option = 1,
@@ -55,7 +56,19 @@ int main(void) {
             system("clear");
             myVector.deleteItem(item);
             break;
-        case 5:                     //Print items from vector
+        case 5:
+            cout << "Select one position: ";
+            cin >> item;            //Here item refers to vector's position
+            system("clear");
+            if ((item <= myVector.getSize()) && (item > 0)) {
+               cout << "The item from pos " << item << " is "
+                    << myVector.getItem(item) << endl;
+            }
+            else {
+               cout << "You can't display the element. Wrong position selected\n";
+            }
+            break;
+        case 6:                     //Print items from vector
             cout << "The vector has "
                  << myVector.getSize() << " elements, and they are: ";
             myVector.printItems();
